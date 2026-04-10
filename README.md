@@ -54,7 +54,13 @@ pnpm convert ./path/to/file.pdf --hybrid docling-fast --hybrid-mode full --hybri
 
 ```bash
 uv --cache-dir ./.uv-cache run opendataloader-pdf-hybrid --port 5002 --force-ocr --ocr-lang ja,en --device cpu
-pnpm convert './sample/戸籍謄本サンプル.pdf' --output-dir ./output/koseki-hybrid-ocr-ja --format markdown,json --hybrid docling-fast --hybrid-mode full --hybrid-url http://127.0.0.1:5002
+pnpm convert './sample/戸籍謄本サンプル.pdf' \
+  --output-dir ./output/koseki-hybrid-ocr-ja \
+  --format markdown,json \
+  --hybrid docling-fast \
+  --hybrid-mode full \
+  --hybrid-url http://127.0.0.1:5002
+
 ```
 
 既定値:
