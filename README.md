@@ -4,6 +4,10 @@
 
 `uv` を使った Python 環境も追加してあり、`opendataloader-pdf` の hybrid/OCR モードも試せます。
 
+公式リポジトリ:
+
+- https://github.com/opendataloader-project/opendataloader-pdf
+
 ## 前提
 
 - Node.js 20.19 以上
