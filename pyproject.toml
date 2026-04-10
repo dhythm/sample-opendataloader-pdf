@@ -1,0 +1,7 @@
+[project]
+name = "sample-opendataloader-pdf"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "opendataloader-pdf[hybrid]>=2.2.1",
+]

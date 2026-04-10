@@ -12,11 +12,20 @@ describe("parseCliArguments", () => {
         "./artifacts",
         "--format",
         "markdown,json",
+        "--hybrid",
+        "docling-fast",
+        "--hybrid-mode",
+        "full",
+        "--hybrid-url",
+        "http://127.0.0.1:5002",
       ]),
     ).toEqual({
       inputPaths: ["./samples/first.pdf", "./samples/second.pdf"],
       outputDir: "./artifacts",
       format: ["markdown", "json"],
+      hybrid: "docling-fast",
+      hybridMode: "full",
+      hybridUrl: "http://127.0.0.1:5002",
     });
   });
 

@@ -16,6 +16,9 @@ async function main(): Promise<void> {
     const result = await convert(cliOptions.inputPaths, {
       outputDir: cliOptions.outputDir,
       format: cliOptions.format,
+      hybrid: cliOptions.hybrid,
+      hybridMode: cliOptions.hybridMode,
+      hybridUrl: cliOptions.hybridUrl,
     });
 
     process.stdout.write(`${result}\n`);

@@ -8,6 +8,8 @@
     "build": "tsc --noEmit",
     "check": "tsc --noEmit",
     "convert": "node --import tsx ./src/main.ts",
+    "hybrid:start": "uv --cache-dir ./.uv-cache run opendataloader-pdf-hybrid --port 5002 --device cpu",
+    "hybrid:start:ocr": "uv --cache-dir ./.uv-cache run opendataloader-pdf-hybrid --port 5002 --force-ocr --device cpu",
     "test": "vitest run"
   },
   "keywords": [],
